@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(20, 20, 20);
+  /* Horizontal mittig */
+  text-align: center;
+}
+
+p {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3px solid rgb(140, 170, 121);
+  border-radius: 50px;
+  /* Einschränkung der Breite */
+  width: 100px;
+  /* Text links im Paragraphen */
+  text-align: left;
+  padding: 7px 15px;
+}
+/* Positioning */
+#rick {
+  position: absolute;
+  top: 30px;
+  right: -20px;
+}
+#sanchev {
+  position: absolute;
+  top: 80px;
+  right: -20px;
+}
+div {
+  /* Nur so groß wie das Bild */
+  display: inline-block;
+  /* Damit die Labels  */
+  position: relative;
+  /* Vertikale Verschiebung */
+  top: 10px;
+}
+img {
+  border: 5px solid white;
+  width: 650px;
+  /* object-position: left; */
+  object-fit: none;
+}
+
+/* ZUSATZ: Z-Index 
+DEFAULT: 0
+*/
+#rick {
+  z-index: +1;
+}
+#sanchev {
+  z-index: -1;
+}
